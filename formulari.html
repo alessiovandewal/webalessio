@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios de Seguridad y Cookies</title>
+    <link rel="stylesheet" href="formulari.css" />
+</head>
+<body>
+
+<div class="container">
+    <h2>Políticas de Seguridad</h2>
+    <p>Utilice este formulario para reportar cualquier problema de seguridad en nuestra web.</p>
+    <form>
+        <label for="nombre">Nombre Completo:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="email">Correo Electrónico: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="problema">Describa el problema de seguridad: <span class="required">*</span></label>
+        <textarea id="problema" name="problema" rows="5" required></textarea>
+
+			<a href="LAST_ACT.html">
+        		<button type="submit">Enviar Reporte</button>
+        	</a>
+    </form>
+    
+    <footer>
+    <p>Contacto: <a href="mailto:alessio.vanderwal@institutidreres.cat">alessio.vanderwal@institutidreres.cat</a></p>
+    
+    <button onclick="window.location.href='LAST_ACT.html'" 
+            style="background-color: #4CAF50; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px;">
+        Pàgina web Inicial
+    </button>
+
+    <button onclick="window.location.href='cookies.html'" 
+            style="background-color: orange; color: white; border: none; padding: 10px 20px; margin: 10px; cursor: pointer; border-radius: 5px;">
+        Ir a las cookies
+    </button>
+
+    <p style="font-size: 12px; margin-top: 10px;">&copy; 2024 - Todos los derechos reservados</p>
+	</footer>
+</div>
+</body>
+</html>
